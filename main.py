@@ -23,6 +23,7 @@ llm = ChatGroq(
     temperature=0
 )
 
+
 parser = PydanticOutputParser(pydantic_object=ResearchResponse)
 
 prompt = ChatPromptTemplate.from_messages([
